@@ -1,0 +1,60 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/inventory-stock-updates",
+      "handler": "inventory-stock-update.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/inventory-stock-updates/get-inventory-stock-status",
+      "handler": "inventory-stock-update.getInventoryStockStatus",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/inventory-stock-updates/count",
+      "handler": "inventory-stock-update.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/inventory-stock-updates/:id",
+      "handler": "inventory-stock-update.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/inventory-stock-updates",
+      "handler": "inventory-stock-update.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/inventory-stock-updates/:id",
+      "handler": "inventory-stock-update.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/inventory-stock-updates/:id",
+      "handler": "inventory-stock-update.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

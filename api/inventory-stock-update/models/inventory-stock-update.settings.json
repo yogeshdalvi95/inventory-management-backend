@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "inventory_stock_updates",
+  "info": {
+    "name": "Inventory Stock Update"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "inventory": {
+      "model": "inventory"
+    },
+    "add_stock": {
+      "type": "boolean",
+      "default": true
+    },
+    "stock_to_update": {
+      "type": "float",
+      "default": 0
+    },
+    "unit": {
+      "model": "unit"
+    },
+    "cost": {
+      "type": "float",
+      "default": 0
+    }
+  }
+}
